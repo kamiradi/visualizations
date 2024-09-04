@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://bimanual-imitation.github.io/ -->
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="description" content="Bimanual Imitation">
+  <meta name="keywords" content="Imitation Learning, Bimanual Manipulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bimanual Imitation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- (Remove if cloning) !! Tag for bimanual imitation !! -->
+  <script async="" src="./Bimanual_Imitation_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VE0696DKLE');
+  </script>
+  <!-- (Remove if cloning) !! Tag for bimanual imitation !! -->
+
+  <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link href="./Bimanual_Imitation_files/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./Bimanual_Imitation_files/bulma.min.css">
+  <link rel="stylesheet" href="./Bimanual_Imitation_files/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./Bimanual_Imitation_files/bulma-slider.min.css">
+  <link rel="stylesheet" href="./Bimanual_Imitation_files/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./Bimanual_Imitation_files/academicons.min.css">
+  <link rel="stylesheet" href="./Bimanual_Imitation_files/index.css">
+  <link rel="icon" href="https://bimanual-imitation.github.io/static/images/irl_lab.png">
+
+  <script src="./Bimanual_Imitation_files/jquery.min.js"></script>
+  <script defer="" src="./Bimanual_Imitation_files/fontawesome.all.min.js"></script>
+  <script src="./Bimanual_Imitation_files/bulma-carousel.min.js"></script>
+  <script src="./Bimanual_Imitation_files/bulma-slider.min.js"></script>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: auto;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./Bimanual_Imitation_files/styles.css">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1193.0" data-gr-ext-installed="">
+  <header class="banner">
+    <div class="banner">
+      <video autoplay="" loop="" muted="" playsinline="" oncontextmenu="return false;" preload="auto" id="bannerVideo">
+        <source src="static/videos/banner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="overlay">
+        <h1 class="overlay-h1" style="opacity: 0.0937669;">A Comparison of Imitation Learning Algorithms for Bimanual Manipulation</h1>
+      </div>
+    </div>
+    <div class="down-arrow" onclick="scrollToNextSection()">
+      <div class="v-shape-left"></div>
+      <div class="v-shape-right"></div>
+    </div>
+
+  </header>
+
+  <section class="hero" id="main-section">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">A Comparison of Imitation Learning Algorithms for Bimanual
+              Manipulation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://drolet.io/">Michael Drolet</a><sup>1,4</sup>,</span>
+              <span class="author-block">
+                <a href="https://simonstepputtis.com/">Simon Stepputtis</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://skailas.github.io/">Siva Kailas </a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://jainajinkya.github.io/">Ajinkya Jain</a> <sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Jan Peters</a><sup>4</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://stefan-schaal.net/">Stefan Schaal</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://henibenamor.weebly.com/">Heni Ben Amor</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-unis">
+              <span class="author-block"><sup>1</sup><a href="https://interactive-robotics.engineering.asu.edu/">Interactive Robotics Lab, Arizona State
+                  University</a></span><br>
+              <span class="author-block"><sup>2</sup><a href="https://www.ri.cmu.edu/"> The Robotics Institute, Carnegie Mellon
+                  University</a></span><br>
+              <span class="author-block"><sup>3</sup><a href="https://www.intrinsic.ai/"> Intrinsic AI (An Alphabet Company)</a></span><br>
+              <span class="author-block"><sup>4</sup><a href="https://www.ias.informatik.tu-darmstadt.de/"> Intelligent Autonomous Systems Lab, TU
+                  Darmstadt</a></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <!-- <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2408.06536" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                  <a href="./static/videos/task_sequence.mp4" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/ir-lab/bimanual-imitation" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://www.dropbox.com/scl/fo/2onj92s7gewettu1rjg3d/h?rlkey=1d4dnhwf3z6s4a51lopgocby5&dl=0"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Amidst the wide popularity of imitation learning algorithms in robotics, their properties regarding
+              hyperparameter sensitivity, ease of training, data efficiency, and performance have not been well-studied
+              in high-precision industry-inspired environments. In this work, we demonstrate the limitations and
+              benefits of prominent imitation learning approaches and analyze their capabilities regarding these
+              properties. We evaluate each algorithm on a complex bimanual manipulation task involving an
+              over-constrained dynamics system in a setting involving multiple contacts between the manipulated object
+              and the environment. While we find that imitation learning is well suited to solve such complex tasks, not
+              all algorithms are equal in terms of handling environmental and hyperparameter perturbations, training
+              requirements, performance, and ease of use. We investigate the influence of these key characteristics by
+              employing a carefully designed experimental procedure and learning environment.
+          </p></div>
+        </div>
+      </div>
+
+      <!-- Abstract. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              Our experiments indicate that recent Imitation Learning methods, such as Diffusion and ACT, outperform
+              traditional techniques (with respect to various metrics) on our high-precision adapter insertion task
+              without the need for extensive hyperparameter tuning. The policy architectures proposed by ACT and
+              Diffusion are effective when combined with action and observation chunking, helping to cope with the noisy
+              (potentially non-Markovian) environment scenario. Interestingly, the online methods- DAgger and GAIL-
+              exhibit high performance under noise perturbations without performing action and observation chunking.
+              Such a result points to the important role these methods still play and demonstrates their ability to
+              recover from unseen states via exploring during training. However, the need for extensive environment
+              interaction (GAIL) and a pre-defined oracle (DAgger) impose real-world challenges that future works must
+              address to make them more practical. Finally, we present a carefully designed environment that can serve
+              as (i) a future benchmark for robot learning methods and (ii) a reference for practitioners in the
+              industry.
+          </p></div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+
+          <center>
+            <img src="./Bimanual_Imitation_files/spider.png" class="spider">
+          </center>
+
+          <h4 class="subtitle has-text-centered" style="font-size: 1em;">
+            <br>
+            A high-level overview of the key metrics and results from our study.
+          </h4>
+        </div>
+      </div>
+
+      <h2 class="title is-3">Learned Policies</h2>
+      <div class="content has-text-justified" style="margin-bottom: 0px;">
+        <p>
+          Every method is trained using a subset of expert demonstrations (either 50, 100, or 200), 10 random seeds, and
+          in three different environments (Zero Noise, Low Noise, or High Noise). The policies during training are
+          presented below. Row 1 corresponds to 10% of training completion; row 2 corresponds to 50% of completion;
+          and row 3 corresponds to 100% completion. Column 1 corresponds to the Zero Noise environment; column 2
+          corresponds to the Low Noise environment; and column 3 corresponds to the High Noise environment, where noise is applied to both the observations and actions.
+        </p>
+      </div>
+      <center>
+        <div class="button-container top" data-index="0" data-variable="currentAlgorithmIndex">
+          <span class="button-text">
+            <pre class="cbutton">Algorithm : BC       </pre>
+          </span>
+          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
+          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
+        </div>
+
+        <div class="button-container middle" data-index="0" data-variable="currentTauIndex">
+          <span class="button-text">
+            <pre class="cbutton">Num Expert: 50       </pre>
+          </span>
+          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
+          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
+        </div>
+
+        <div class="button-container bottom" data-index="0" data-variable="currentSeedIndex">
+          <span class="button-text">
+            <pre class="cbutton">Seed      : 1        </pre>
+          </span>
+          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
+          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
+        </div>
+        <br>
+        <div class="container3">
+          <div class="grid"><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_a0o0,num_trajs=050,run=000,pct=010,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video><div class="text-overlay-top">Zero Noise</div><div class="text-overlay-left">10%</div></div><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_aLoL,num_trajs=050,run=000,pct=010,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video><div class="text-overlay-top">Low Noise</div></div><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_aMoM,num_trajs=050,run=000,pct=010,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video><div class="text-overlay-top">High Noise</div></div><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_a0o0,num_trajs=050,run=000,pct=050,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video><div class="text-overlay-left">50%</div></div><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_aLoL,num_trajs=050,run=000,pct=050,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video></div><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_aMoM,num_trajs=050,run=000,pct=050,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video></div><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_a0o0,num_trajs=050,run=000,pct=100,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video><div class="text-overlay-left">100%</div></div><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_aLoL,num_trajs=050,run=000,pct=100,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video></div><div class="grid-item"><video src="static/grid_vids/alg=bclone,env=quad_insert_aMoM,num_trajs=050,run=000,pct=100,rollout_000.mp4" autoplay="" loop="" playsinline="" disablepictureinpicture="" preload="auto"></video></div></div>
+        </div>
+        <!-- <pre id="display-info" class="display-info" style="background-color: inherit; font-size: 1em; padding: 10px; margin: 10px;"></pre> -->
+      </center>
+      <br>
+      
+      <div class="content has-text-justified" style="margin-bottom: 0px;">
+        <p>
+          It can be seen that vanilla Behavioral Cloning (BC), Implicit Behavioral Cloning (IBC), and DAgger struggle in terms of training stability, having relatively inconsistent performance over time. However, in the default environment (Zero Noise with 200 expert deomonstrations) the performance is often satisfactory when choosing the best policy out of 10 evenly-spaced checkpoints. On the other hand, ACT and Diffusion exhibit stable behavior throughout the training process and, comparatively, quickly obtain good policy parameters. Notably, the GAIL policies exhibit strong performance toward the end of training- in all environments, once the discriminator and generator/policy reach a stable state. However, the amount of time required for this to happen is significantly higher than the other methods.
+        </p>
+      </div>
+      <br>
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Related Material</h2>
+          <div class="content has-text-justified" style="margin: 0px; padding-bottom: 0px;">
+            <p>
+              <a href="https://github.com/ir-lab/bimanual-imitation">Our codebase</a> inherits features from <a href="https://github.com/ir-lab/irl_control">IRL Control</a>, which supports:
+            </p><ul>
+              <li><strong>Low-level Controllers</strong> including Operational Space Control and Admittance Control.
+              </li><li><strong>Demo Collection</strong> with PS Move controllers and 3D Connexion Space Mouse for
+                teleoperation.
+              </li>
+              <li><strong>Configuration Files</strong> for tuning PID Gains, min/max velocities, and adding kinematic
+                descriptions of the robot devices.
+              </li>
+            </ul>
+            As our work focuses on learning in the operational/task space, we extend IRL Control to implicitly control the robot's torso through the nullspace. Thus, the action space can be characterized by using only the change in position/rotation of two end effectors. Some of the key features available are described below.
+            <p></p>
+          </div>
+      <!--/ method. -->
+      <div class="columns is-centered has-text-centered">
+        <!-- Regid Body motion -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-5" style="padding: 0px; margin: 0.5em;">Data Collection and Teleoperation</h2>
+            <img src="./Bimanual_Imitation_files/ps_move_demo.gif" type="video/mp4">
+            <p style="text-align: justify;">
+              The user teleoperates the robot for picking up objects in the scene. PS Move controllers allow for opening/closing the gripper and selecting a target which the robot moves to when the trigger is pressed. This setup can be used for collecting expert demonstrations, especially if the task is not sufficiently difficult.
+            </p>
+          </div>
+        </div>
+        <!--/ Regid Body motion -->
+
+        <!-- Soft robot motion -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-5" style="padding: 0px; margin: 0.5em;">Force/Torque Sensing</h2>
+            <img src="./Bimanual_Imitation_files/force_test.gif" type="video/mp4">
+            <p style="text-align: justify;">
+              This example makes use of the robot's force/torque sensor to demonstrate how the admittance controller reacts to the external environment. 
+              The target position of the left arm is given, such that, upon hitting the wall, the arm must gently bounce backward insteading of pushing against the wall (with a larger force) to reach the desired position.
+            </p>
+          </div>
+        </div>
+        <!--/ soft robot motion -->
+      </div>
+      <!--/ Matting. -->
+
+
+      <!--/ method. -->
+      <div class="columns is-centered has-text-centered">
+        <!-- Regid Body motion -->
+        <div class="column">
+          <div class="content" style="padding-top: 0px;">
+            <h2 class="title is-5" style="padding: 0px; margin: 0.5em;">Single Arm Insertion Tasks</h2>
+            <img src="./Bimanual_Imitation_files/insertion_task.gif" type="video/mp4">
+            <p style="text-align: justify;">
+              The robot performs adapter insertion, with each component spawned at a randomly generated angle and position. The robot must precisely align and insert the components with a small tolerance and execute a sequence of actions defined by a YAML file. This file defines instructions that can be executed on either arm, as well as: how much force the gripper should apply at each stage of the task, the velocity constraints, and the objects involved in the action (containing information on the proper location and orientation for picking/inserting).              
+            </p>
+          </div>
+        </div>
+        <!--/ Regid Body motion -->
+
+        <!-- Soft robot motion -->
+        <div class="column">
+          <div class="content" style="padding-top: 0px;">
+            <h2 class="title is-5" style="padding: 0px; margin: 0.5em;">PID Gain Tuning</h2>
+            <img src="./Bimanual_Imitation_files/gain_test.gif" type="video/mp4">
+            <p style="text-align: justify;">
+              This example evaluates the PID gains to ensure that the torso (which is explicitly controlled in this scenario) and passive arm are stable under high torques from the moving arm. It can be seen that the right arm is vigorously moving back-and-forth in order to apply a high torque to the rest of the robot's body. The torso and left arm are stable under these forces, suggesting that the chosen gains are adequate for tasks requiring a high-speed arm movement.           
+            </p>
+          </div>
+        </div>
+        <!--/ soft robot motion -->
+      </div>
+      <!--/ Matting. -->
+
+
+        </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{drolet2024,
+        author    = {Drolet, Michael and Stepputtis, Simon and Kailas, Siva and Jain, Ajinkya and Peters, Jan and Schaal, Stefan and Ben Amor, Heni},
+        title     = {A Comparison of Imitation Learning Algorithms for Bimanual Manipulation},
+        journal   = {IEEE Robotics and Automation Letters (RA-L)},
+        year      = {2024},
+      }</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <!-- <a class="icon-link" href="">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a class="icon-link" href="https://github.com/mdrolet01" class="external-link" disabled>
+            <i class="fab fa-github"></i>
+          </a> -->
+          <div class="content">
+            <p>
+              This website uses the template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function scrollToNextSection() {
+        const nextSection = document.getElementById('main-section');
+        if (nextSection) {
+          nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+      // Attach the function to the window object so it can be called from the onclick attribute
+      window.scrollToNextSection = scrollToNextSection;
+    });
+  </script>
+
+  <script>
+    const video = document.getElementById('bannerVideo');
+    const bannerText = document.querySelector('.overlay h1');
+
+    video.addEventListener('timeupdate', () => {
+      const currentTime = video.currentTime;
+      const duration = video.duration;
+      const percentage = (currentTime / duration) * 100;
+
+      if (percentage >= 75) {
+        // Normalize the percentage to a value between 0 and 1
+        const normalizedOpacity = (percentage - 75) / 25; // Maps 80-100% to 0-1
+        bannerText.style.opacity = normalizedOpacity.toString();
+      } else {
+        bannerText.style.opacity = '0'; // Ensure invisible before 80%
+      }
+    });
+  </script>
+
+  <script src="./Bimanual_Imitation_files/script.js"></script>
+
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
